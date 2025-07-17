@@ -30,7 +30,7 @@ background: #fab95b;
   position: fixed;
   bottom: 2%;
   left: 50%;
-  top: 74%;
+  top: 71%;
   transform: translateX(-50%);
   text-align: center;
   z-index: 1000;
@@ -45,7 +45,7 @@ background: #fab95b;
 /*Down button*/
 #mobile-controls-down {
   position: fixed;
-  bottom: 9%;
+  bottom: 7%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -62,7 +62,7 @@ background: #fab95b;
 #mobile-controls-left{
   position: fixed;
   bottom: 14%;
-  left: 35%;
+  left: 30%;
   transform: translateX(-50%);
   text-align: center;
   z-index: 1000;
@@ -78,7 +78,7 @@ background: #fab95b;
 #mobile-controls-right {
    position: fixed;
   bottom: 14%;
-  right: 19%;
+  right: 12%;
   transform: translateX(-50%);
   text-align: center;
   z-index: 1000;
