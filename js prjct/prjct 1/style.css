@@ -111,11 +111,3 @@ canvas {
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
 }
-#score-container {
-  top: 20%;
-  position: absolute;
-  text-align: center;
-  font-size: 1.5em;
-  margin-top: 10px;
-  color: #333;
-}

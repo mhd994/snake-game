@@ -15,15 +15,6 @@ let lastRenderTime = 0;
 let gameOver = false;
 const gameBoard = document.getElementById("game-board")
 let score = 0;
-function updateScore() {
-  document.getElementById('score').textContent = score;
-}
-if (onSnake(foodPosition)) {
-  expandSnake(EXPANSION_RATE); // or grow the snake
-  score += 1;                   // increase score
-  updateScore();                // update the score display
-  foodPosition = getRandomFoodPosition(); // new food
-}
 
 function main(currentTime){
     if(gameOver){
@@ -59,5 +50,4 @@ drawFood(gameBoard);
 function checkDeath(){
     gameOver = outsideGrid(getSnakeHead()) || snakeIntersection();
 }
-
 
