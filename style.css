@@ -1,0 +1,113 @@
+body{
+
+    background: darkred;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#game-board {
+    background: #1a3263;
+    width: 100vmin;
+    height: 100vmin;
+    top: 15;
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+}
+.snake {
+    background: #e8e2db;
+    border: 0.25vmin solid black;
+}
+.food{
+background: #fab95b;
+    border: 0.25vmin solid black;
+
+}
+/*Up button*/
+#mobile-controls-up {
+  position: fixed;
+  bottom: 2%;
+  left: 50%;
+  top: 71%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1000;
+}
+#mobile-controls-up button {
+   width: 60px;
+  height: 60px;
+  font-size: 24px;
+  margin: 5px;
+  border-radius: 30px;
+}
+/*Down button*/
+#mobile-controls-down {
+  position: fixed;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1000;
+}
+#mobile-controls-down button {
+    width: 60px;
+  height: 60px;
+  font-size: 24px;
+  margin: 5px;
+  border-radius: 30px;
+}
+/*Left button*/
+#mobile-controls-left{
+  position: fixed;
+  bottom: 14%;
+  left: 30%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1000;
+}
+#mobile-controls-left button {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  margin: 5px;
+  border-radius: 30px;
+  }
+  /*Right button*/
+#mobile-controls-right {
+   position: fixed;
+  bottom: 14%;
+  right: 12%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1000;
+}
+#mobile-controls-right button{
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  margin: 5px;
+  border-radius: 30px;
+}
+canvas {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+.page-title {
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  margin-top: 20px;
+  font-size: 3em;
+  color: #2c3e50;
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
